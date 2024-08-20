@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  background-color: gray;
+  height: 98.7vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+}
+
+.header > h1 {
+  display: flex;
+  font-size: 7vw;
+  margin-bottom: 30px;
+}
+
+.headerSVG {
+  display: flex;
+  justify-content: center;
+  width: 7vw;
+  background-color: white;
+}
+
+.row {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.panel {
+  margin: 0px 35px 10px 35px;
+}
+
+.favoritesTitle {
+  display: inline-flex;
+}
+
+.favoritesBtns > button {
+  float: right;
+  margin: 0px 14px 10px 0px;
+}
+
+#spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide spinner initially */
+#spinner {
+  display: none;
+}
